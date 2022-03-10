@@ -13,7 +13,7 @@ func main() {
 	router.POST("/deliveries", postDelivery)
 	router.DELETE("/deliveries/:id", deleteDeliveryById)
 
-	router.Run(ADDR)
+	router.Run(ConfigHostPort)
 }
 
 //// delivery represents data about a record delivery.

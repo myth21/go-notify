@@ -1,8 +1,13 @@
 package main
 
-const ADDR = "localhost:8888"
-const HOST = "localhost"
-const PORT = "8888"
+// todo via config.port
+const (
+	ConfigHostPort       string = "localhost:8888"
+	ConfigHost           string = "localhost"
+	ConfigPort           string = "8888"
+	ConfigDbDriver       string = "sqlite3"
+	ConfigDataSourceName string = "db.sqlite"
+)
 
 //func getAddr() string {
 //	return "localhost:8888"
