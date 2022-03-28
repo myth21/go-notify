@@ -11,6 +11,8 @@ func main() {
 	router.GET("/deliveries", getDeliveries)
 	router.GET("/deliveries/:id", getDeliveryById)
 	router.POST("/deliveries", postDelivery)
+	router.PUT("/deliveries/:id", updateDeliveryById)
+	//router.PATCH("/deliveries/:id", updateDeliveryById)
 	router.DELETE("/deliveries/:id", deleteDeliveryById)
 
 	router.Run(ConfigHostPort)
